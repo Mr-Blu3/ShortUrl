@@ -45,6 +45,7 @@ header h4 {
 }
 
 #RenderFields {
+	text-align: center;
 	margin: 50px auto;
 	width: 30%;
 	word-wrap: break-word;
@@ -81,7 +82,6 @@ header h4 {
 }
 
 #RenderFields p {
-	text-align: center;
 	min-height: 30px;
 }
 

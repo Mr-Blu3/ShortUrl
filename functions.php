@@ -66,8 +66,8 @@ function findDb($v_p_oUrl, $v2_mVal = Null, $v3_mVal = Null)
 
 function UniqueValue($v_sRand) 
 {
-	$aUnique = [];
 	$oResults = getDb()->find(['shorturl' => $v_sRand]);
+	$aUnique['sRandom'] = $v_sRand;
 		
 	while (list($v_s_oResult) = each($oResults)) {
 	    

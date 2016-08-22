@@ -74,7 +74,9 @@ function UniqueValue($v_sRand)
 	    if ($v_s_oResult === $v_sRand) {
 	        
 	        $v_sRand = uniqid();
+	        $oResults = getDb()->find(['shorturl' => $v_sRand]);
 	        reset($oResults); 
+	    
 	    }
 
 	}
